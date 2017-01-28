@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<title>Adsophos - MJCET</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bs.events.css">
+        <link rel="stylesheet" type="text/css" href="hexagons.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/hexagon.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    </head>
+
+    <style type="text/css">
+        canvas {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            z-index: -1000;
+        }
+    </style>
+    <body>
+        <div id="WebGL-output"></div>
+        
+
+     <!-- <nav class="navbar navbar-inverse navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--<div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="logofinal.png" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        <!-- </div> 
+        <!-- /.container -->
+    <!--</nav> -->
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <img src='hero.png' style='position:fixed;top:140px;left:108px;width:80%;height:70%;z-index:-1;'>
+    <img src='moon.gif' style='position:fixed;top:43%;left:47%;width:5%;height:10%;z-index:-1;'>
+
+
+<div class="container" style="position: fixed;top: 10px">
+    <div class="row">
+        <div class="col-xs-offset-2">
+        <ul id="hexGrid" class="club-container" style="text-align: center;" >
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/bulb.png" alt="" />
+                    <h1>Vison & Mission</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/events.png" alt="" />
+                    <h1>Events</h1>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/images.png" alt="" />
+                    <h1> &nbsp;&nbsp;&nbsp;Images</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/testimonials.png" alt="" />
+                    <h1>Testimonials</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/contact.png" alt="" />
+                    <h1>Contact</h1>
+                    <p></p>
+                </a>
+            </li>
+        </ul>
+        <div style="height:40vh"></div>
+
+        <ul id="hexGrid" class="club-container">
+            
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/civil.png" alt="" />
+                    <h1>Civil Department</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/cse.png" alt="" />
+                    <h1>CSE Department</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/ece.png" alt="" />
+                    <h1>ECE Department</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/Ecell.png" alt="" />
+                    <h1>E-Cell</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/eee.png" alt="" />
+                    <h1>EEE Department</h1>
+                    <p></p>
+                </a>
+            </li>
+           <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/it.png" alt="" />
+                    <h1>IT Department</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/mechanical.png" alt="" />
+                    <h1>Mech Department</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/robotics.png" alt="" />
+                    <h1>Robotics</h1>
+                    <p></p>
+                </a>
+            </li>
+            <li class="hex">
+                <a class="hexIn" href="#">
+                    <img src="assets/fb.png" alt="" />
+                    <h1>Like Us</h1>
+                    <p></p>
+                </a>
+            </li>
+
+            
+        </ul>
+</div>
+</div>
+</div>
+
+
+         
+    </body>
+</html>
+<script type="text/javascript" src="js/hexagon.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/three.min.js"></script>
