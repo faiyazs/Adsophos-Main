@@ -2,6 +2,7 @@
 var device_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 var device_height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
 var last_open;
+     
 
 $(document).ready(function() {
 
