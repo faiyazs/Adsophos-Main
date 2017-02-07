@@ -22,6 +22,8 @@
 
 
         <style type="text/css">
+     
+
             canvas {
                 position: fixed;
                 height: 100vh;
@@ -38,16 +40,26 @@
     <body>
        <div id="WebGL-output"> </div>
 
-   
+
         <a href="about.html" > 
-            <img src="assets/bulb1.png" class="img-responsive floating" style='position:fixed;top:9%;left:17%;width:8%;'> 
+            <img src="assets/bulb1.png" class="img-responsive floating" 
+               onmouseover="this.src='assets/bulb2.png'"
+    onmouseout="this.src='assets/bulb1.png'"
+      style='position:fixed;top:9%;left:17%;width:8%;'> 
             </a>
            
+           
         <a href="photos.html">
-            <img src="assets/camera1.png" class="img-responsive floating" style='position:fixed;top:10%;left:33%;width:6%;' >
+            <img src="assets/camera1.png" class="img-responsive floating" 
+              onmouseover="this.src='assets/camera21.png'"
+    onmouseout="this.src='assets/camera1.png'"
+            style='position:fixed;top:10%;left:33%;width:6%;' >
         </a>
         <a href="testimonials.html">
-            <img src="assets/testimonials1.png" class="img-responsive floating" style='position:fixed;top:12%;left:43%;width:8%;' >
+            <img src="assets/testimonials1.png" class="img-responsive floating"
+             onmouseover="this.src='assets/testimonials2.png'"
+    onmouseout="this.src='assets/testimonials1.png'"
+     style='position:fixed;top:12%;left:43%;width:8%;' >
         </a>
         <a href="http://www.mjcollege.ac.in/">
             <img src="assets/website1.png" class="img-responsive floating" style='position:fixed;top:11%;left:58%;width:5%;' >
