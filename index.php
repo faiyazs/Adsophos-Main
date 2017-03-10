@@ -9,17 +9,13 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Event Register</title>
+        <title>ADSOPHOS</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
-
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -103,7 +99,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input id="createEvent" class="btn btn-default" onclick="addNewEvent()" type="submit" name="submit" value="CREATE EVENT" required="" disabled="true" />
+                            <input id="createEvent" class="btn btn-default" onclick="addNewEvent()" type="button" name="submit" value="CREATE EVENT" required="" disabled="true" />
                         </div>
 
                     </form>
