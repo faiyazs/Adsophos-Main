@@ -29,12 +29,17 @@
 
                     <form method="POST" id="createEventForm">
 
+  <h1><span class="label label-default" style=" height: 50%;
+    display: flex;justify-content: center;
+    align-items: center; ">Register</span></h1>
+  </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3">Event Name:</label>
                             <div class="col-sm-9">
                                 <input id="eventName" class="form-control" type="text" name="eventName"  required="" />
                             </div>
                         </div>
+                        &nbsp;
 
                         <div class="form-group">
                             <label class="control-label col-sm-3">Student body:</label>
@@ -46,21 +51,21 @@
                                     <option value="ROBOTICS">ROBOTICS</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>&nbsp;
 
                         <div class="form-group">
                             <label class="control-label col-sm-3">Date:</label>
                             <div class="col-sm-9">
                                 <input id="date" class="form-control" type="date" name="date" required="" />
                             </div>
-                        </div>
+                        </div>&nbsp;
 
                         <div class="form-group">
                             <label class="control-label col-sm-3">Registration Fee:</label>
                             <div class="col-sm-9">
                                 <input id="fee" class="form-control" type="text" name="fee" required="" />
                             </div>
-                        </div>
+                        </div>&nbsp;
 
                         <div class="form-group">
                             <label class="control-label col-sm-3">Contact:</label>
@@ -68,7 +73,7 @@
                                 <input id="contactPerson" class="form-control" type="text" name="contactPerson" style="width: 50%" required="" />:
                                 <input id="contact" class="form-control" type="tel" name="contact" style="width: 50%" required="" />
                             </div>
-                        </div>
+                        </div>&nbsp;
 
                         <div class="form-group">
                             <label class="control-label col-sm-3">Location:</label>
@@ -76,13 +81,13 @@
                                 <input id="location" class="form-control" type="text" name="location" required="" />
                             </div>
                         </div>
-
+&nbsp;
                         <div class="form-group">
                             <label class="control-label col-sm-3">Event Description:</label>
                             <div class="col-sm-9">
                                 <textarea id="eventDesc" class="form-control" name="eventDesc"></textarea>
                             </div>
-                        </div>
+                        </div>&nbsp;
 
                         <div class="form-group">
                             <label class="control-label col-sm-3">Reward:</label>
@@ -104,7 +109,6 @@
 
                     </form>
 
-                </div>
 
             </div>
             
