@@ -26,13 +26,21 @@
 		console.log("URL:" + id);
 	</script>
 	<div>
-		<h3>Your Event has been registered! Here is the QR Code to your event.</h3>
-		<img src="" id="QRCode" alt="Event QR Code" />
+		<h3 class="text-center">Your Event has been registered! Here is the QR Code to your event.</h3>
+		<center>
+			<div>
+				<img src="" id="QRCode"  alt="Event QR Code" />				
+			</div>
+			<div>
+			<a href="" id="downloadQR" class="btn btn-primary" download>DOWNLOAD</a>				
+			</div>
+		</center>
+		<h3 class="text-center">Your event will be approved by authorities.</h3>
 	</div>
 </body>
 <script type="text/javascript">
 	var url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + id;
-
 	document.getElementById('QRCode').src = url;
+	document.getElementById('downloadQR').href = url;
 </script>
 </html>

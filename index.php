@@ -42,12 +42,18 @@
                         &nbsp;
 
                         <div class="form-group">
-                            <label class="control-label col-sm-3">Student body:</label>
+                            <label class="control-label col-sm-3">Branch:</label>
                             <div class="col-sm-9">
                                 <select class="form-control" id="studentBody" name="studentBody">
-                                    <option value="CSI">CSI</option>
-                                    <option value="ECELL">ECELL</option>
-                                    <option value="IEEE">IEEE</option>
+                                    <option value="CSE">CSE</option>
+                                    <option value="IT">IT</option>
+                                    <option value="CIVIL">CIVIL</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="EIE">EIE</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="PROD">PROD</option>
+                                    <option value="MECH">MECH</option>
+                                    <option value="E-CELL">E-CELL</option>
                                     <option value="ROBOTICS">ROBOTICS</option>
                                 </select>
                             </div>
@@ -115,18 +121,7 @@
         </div>
 
         <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
-        <script>
-          // Initialize Firebase
-          var config = {
-            apiKey: "AIzaSyDIdd0ogU8nxMCSL4-Xpeou8KMUJwOV3PU",
-            authDomain: "mj-connect.firebaseapp.com",
-            databaseURL: "https://mj-connect.firebaseio.com",
-            storageBucket: "mj-connect.appspot.com",
-            messagingSenderId: "937124289290"
-          };
-          firebase.initializeApp(config);
-        </script>
-        
+        <script src="./firebase.js"></script>
         <script type="text/javascript" src="addEvents.js"></script>
     </body>
 </html>

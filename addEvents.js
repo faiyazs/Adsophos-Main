@@ -96,10 +96,14 @@ function addNewEvent() {
 		posterURL: posterURL
 	});
 
+	var event;
+	var encode64;
+
 	dbRef.ref('events/' + id).on("value", function(snapshot) {
-		console.log(snapshot.val());
+		event = snapshot.val();
+		encode64 = btoa(JSON.stringify(event));
 	}, function(errorObject) {
 		console.log("The read failed: " + errorObject.code);
 	});
-	//window.open("./eventQRCode.html?id=" + id);
+	window.open("./eventQRCode.html?id=" + encode64);
 }
